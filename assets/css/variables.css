@@ -8,10 +8,12 @@
     /* Cyan */
     --cyan-600: #4D96A9;
     --cyan-300: #8FE3F9;
+    --cyan-hover: #71C0D4;
 
     /* Purple */
     --purple-600: #855FB1;
     --purple-300: #D9B8FF;
+    --purple-hover: #B18BDD;
 
     /* Slate */
     --slate-900: #28283D;
@@ -51,7 +53,7 @@
     letter-spacing: 0;
 }
 
-.text-prseet-3 {
+.text-preset-3 {
     font-size: 0.25em;
     font-weight: 900;
     line-height: 1.1;
@@ -62,6 +64,13 @@
     font-size: 0.281em;
     font-weight: 500;
     line-height: 1.1;
+    letter-spacing: 0;
+}
+
+.text-preset-5 {
+    font-size: 0.281em;
+    font-weight: 900;
+    line-height: 1.5;
     letter-spacing: 0;
 }
 

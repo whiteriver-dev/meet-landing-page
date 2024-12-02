@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link rel="stylesheet" src="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   
   <title>Frontend Mentor | Meet landing page</title>
 </head>
@@ -19,13 +19,19 @@
 
 <!--HERO Section-->
     <section class="hero">
-      <div class="portraits-container-mobile"></div>
-      <div class="portraits-container-tablet"></div>
-      <div class="portraits-container-desktop"></div>
-      <h1 class="hero__header">Group Chat for Everyone</h1>
-      <p class="hero__description">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-      <button class="btn">Download <span class="version">v1.3</span></button>
-      <button class="btn">What is it?</button>
+      <div class="portraits-container">
+        <img class="portraits-mobile" src="assets/tablet/image-hero.png" alt="Mobile portraits group">
+        <img class="portraits-left" src="assets/desktop/image-hero-left.png" alt="Portraits left half">
+        <img class="portraits-right" src="assets/desktop/image-hero-right.png" alt="Portraits right half">
+      </div>
+      <div class="hero-text-content">
+        <h1 class="hero__header text-preset-1">Group Chat for Everyone</h1>
+        <p class="hero__description text-preset-4">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <div class="btn-group">
+          <button class="btn bg-cyan">Download <span class="version">v1.3</span></button>
+          <button class="btn bg-purple">What is it?</button>
+        </div>
+       </div>
     </section>
 
 <!--Value Section-->
@@ -50,7 +56,7 @@
       <img class="page-number" src="assets/number2.svg" alt="Page Number 2">
       <h3 class="cta__header">Experience more together</h3>
       <p class="cta__description">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-      <button class="btn">Download <span class="version">v1.3</span></button>
+      <button class="btn bg-purple">Download <span class="version">v1.3</span></button>
     </section>
 
   </main>

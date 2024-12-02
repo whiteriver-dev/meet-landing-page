@@ -7,10 +7,111 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-html, body {
+/* Base style */
+
+body {
     background-color: white;
     font-size: 64px;
+    font-family: 'Red Hat Display';
+    width: 100vw;
 }
 
+.portraits-left, .portraits-right {
+    display: none;
+}
+
+/* Logo */
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+
+}
+
+/* Reusable styles */
+
+.btn {
+    all: unset;
+    color: white;
+    border-radius: 29px;
+
+    font-size: 0.281em;
+    font-weight: 900;
+    line-height: 1.5;
+    letter-spacing: 0;
+
+    padding: 16px 40px;
+}
+
+.bg-cyan {
+    background-color: var(--cyan-600);
+}
+
+.bg-cyan span {
+    color: var(--cyan-300)
+}
+
+.bg-cyan:hover {
+    background-color: var(--cyan-hover);
+    cursor: pointer;
+}
+
+.bg-purple {
+    background-color: var(--purple-600);
+}
+
+.bg-purple span {
+    color: var(--purple-300);
+}
+
+.bg-purple:hover {
+    background-color: var(--purple-hover);
+    cursor: pointer;
+}
+
+/* Section styles */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Specific styles */
+
+.portraits-container {
+    display: flex;
+    justify-content: center;
+    scale: 1.1;
+}
+
+.hero-text-content {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.portraits-mobile {
+    min-width: 100vw;
+}
+
+.hero__header {
+    color: var(--slate-900);
+}
+
+.hero__description {
+    color: var(--slate-600);
+}
+
+.btn-group {
+    display: block;
+}
