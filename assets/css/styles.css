@@ -15,7 +15,7 @@
 
 body {
     background-color: white;
-    font-size: 64px;
+    font-size: clamp(48px, 2vw, 64px);
     font-family: 'Red Hat Display';
     width: 100vw;
 }
@@ -30,6 +30,7 @@ header {
     display: flex;
     justify-content: center;
     margin-top: 40px;
+    margin-bottom: 40px;
     width: 100%;
 
 }
@@ -92,12 +93,18 @@ header {
     display: flex;
     justify-content: center;
     scale: 1.1;
+    padding: 10px;
 }
 
 .hero-text-content {
     display: flex;
+    justify-content: center;
+    align-content: center;
     flex-direction: column;
-    height: fit-content;
+    margin-top: 72px;
+    gap: 24px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .portraits-mobile {
@@ -106,10 +113,16 @@ header {
 
 .hero__header {
     color: var(--slate-900);
+    overflow-y: hidden;
+    max-width: 448px;
+    margin: 0 auto;
 }
 
 .hero__description {
     color: var(--slate-600);
+    overflow-y: hidden;
+    max-width: 448px;
+    margin: 0 auto;
 }
 
 .btn-group {
