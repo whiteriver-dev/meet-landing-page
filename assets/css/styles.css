@@ -313,6 +313,14 @@ header {
 
 @media screen and (min-width: 1024px) {
 
+    body {
+        font-size: 64px;
+    }
+
+    header {
+        margin-top: 1.25em;
+    }
+
         /* Footer image adjustment */
         .cta {
             background-image: url('https://whiteriver-dev.github.io/meet-landing-page/assets/desktop/image-footer.jpg');
@@ -326,7 +334,68 @@ header {
 
         .portraits-left, .portraits-right {
             display: block;
+            position: absolute;
         }
 
+        .portraits-right {
+            left: 75%;
+            scale: 1.1;
+        }
 
-}
+        .portraits-left {
+            right: 75%;
+            scale: 1.1;
+        }
+
+        .hero {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;;
+            position: relative;
+        }
+
+        .hero-text-content {
+            padding: 0 10%;
+        }
+
+        .value-images-container {
+            margin: 0 5%;
+        }
+
+        .value__header {
+            margin: 0 18%;
+        }
+
+        .value__subheader {
+            font-size: 0.4em;
+        }
+
+        .value__description {
+            margin: 0 8%;
+        }
+
+        .cta-text-content {
+            margin: 0;
+        }
+
+        .cta-text-content-2 {
+            display: flex;
+            font-size: clamp(0.6em, 2vw, 1em);
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: left;
+            gap: 5%;
+            margin: 0.25em 2em;
+
+        }
+
+        .cta__description {
+            max-width: 355px;
+            font-size: 0.3em;
+        }
+
+        .cta-text-content-2 .btn {
+            width: 100%;
+        }
+ }
