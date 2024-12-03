@@ -143,7 +143,7 @@ header {
     justify-content: center;
     text-align: center;
 
-    background-image: url('/assets/mobile/image-footer.jpg');
+    background-image: url('https://whiteriver-dev.github.io/meet-landing-page/assets/mobile/image-footer.jpg');
     background-repeat: no-repeat;
     background-size:cover;
     background-position-y: 100px;
