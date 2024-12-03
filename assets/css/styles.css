@@ -262,4 +262,71 @@ header {
 }
 
 
+/* Tablet specific styles */
 
+@media screen and (min-width: 768px) {
+
+    /* Footer image adjustment */
+    .cta {
+        background-image: url('https://whiteriver-dev.github.io/meet-landing-page/assets/tablet/image-footer.jpg')
+    }
+
+
+    /* Grid assignments */
+
+    .value-images-container {
+        grid-template-columns: repeat(4, autofit);
+        gap: 0.5em;
+        padding: 0 1em;
+    }
+    
+    #value-image-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    
+    #value-image-2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    #value-image-3 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    #value-image-4 {
+        grid-column: 4 / 5;
+        grid-row: 1 / 2;
+    }
+
+    /* Margins/paddings */
+
+    .value-text-content {
+        margin: 0 20%;
+    }
+
+    .cta-text-content {
+        margin: 0 10%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+        /* Footer image adjustment */
+        .cta {
+            background-image: url('https://whiteriver-dev.github.io/meet-landing-page/assets/desktop/image-footer.jpg');
+            background-position: center top 100px;
+        }
+
+        /* Portraits image adjustment */
+        .portraits-mobile {
+            display: none;
+        }
+
+        .portraits-left, .portraits-right {
+            display: block;
+        }
+
+
+}
