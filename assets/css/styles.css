@@ -114,6 +114,11 @@ header {
     padding-top: 1em;
 }
 
+.cta-text-content {
+    z-index: 100;
+    padding: 0 0.5em;
+}
+
 /* END Containers */
 
 .portraits-mobile {
@@ -129,9 +134,39 @@ header {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding-bottom: 1em;
 }
 
-.page-number {
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    background-image: url(/assets/mobile/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position-y: 100px;
+    position: relative;
+
+    overflow-y: hidden;;
+
+    padding-bottom: 1em;
+}
+
+.cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cyan-600);
+    opacity: 0.85;
+    top: 100px;
+}
+
+.page-number-1 {
     margin: 0 auto;
     padding-bottom: 64px;
 }
@@ -176,6 +211,21 @@ header {
     font-size: 0.30em;
     padding: 0 3em;
     padding-top: 0.5em;
+}
+
+.cta__header {
+    color: white;
+    overflow-y: hidden;
+    padding-top: 0.5em;
+}
+
+.cta__description {
+    color: white;
+    line-height: 1.5;
+    padding: 0 1.5em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    font-size: 0.35em;
 }
 
 /* END Text styling */
